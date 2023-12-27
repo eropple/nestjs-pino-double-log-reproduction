@@ -1,0 +1,3 @@
+{
+  "extends": "@treblestreet-packages/typescript-config/base.json"
+}

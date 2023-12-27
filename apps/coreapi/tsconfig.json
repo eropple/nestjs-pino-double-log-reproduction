@@ -1,0 +1,8 @@
+{
+  "extends": "@treblestreet-packages/typescript-config/nestjs.json",
+  "compilerOptions": {
+    "preserveWatchOutput": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+  }
+}
