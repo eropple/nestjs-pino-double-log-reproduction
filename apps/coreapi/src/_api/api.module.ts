@@ -2,7 +2,6 @@ import { MiddlewareConsumer, Module } from "@nestjs/common";
 import { LoggerModule } from "nestjs-pino";
 
 import { MetaModule } from "./meta/meta.module";
-import { API_ROOT_LOGGER } from "./logging";
 
 @Module({
   imports: [
@@ -14,8 +13,6 @@ import { API_ROOT_LOGGER } from "./logging";
           pinoHttp: {
             level: "info",
             name: "coreapi",
-            autoLogging: true,
-            logger: API_ROOT_LOGGER,
             redact: {
               remove: true,
               paths: [
